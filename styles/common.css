@@ -1,7 +1,7 @@
 /* common.css 모든 웹페이지 공통 css == common */
 /* common.css == header, footer 공통영역 Design*/
 /* Firefox */
-html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;} */
 /* Opera */
 html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
 html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
