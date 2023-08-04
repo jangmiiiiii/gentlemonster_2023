@@ -1,0 +1,73 @@
+/* main */
+/* main - 1. visual */
+main { margin:0 auto;}
+main .visual {
+    position: relative; overflow: hidden; /*overflow: hidden; 비디오가 혹시나 넘친다면 , 숨기라는 뜻  */
+    height: 100vh;
+}
+main .visual .txt {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position:absolute; width: 100%; top:40%;
+    text-align: center; z-index: 900;
+
+}
+main .visual .txt p {
+    font-size:2.369em  ;
+    margin-bottom: 25px;
+    color:#fff;
+}
+main .visual .txt h1{
+    font-size: 3.157em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    /* text-shadow:0 0 5px; rgba(0,0,0,0.15); */
+    color:#F33BE1;
+    padding-bottom: 20px;
+}
+
+main .visual .txt .link {
+}
+main .visual .txt .link a {
+    background:rgba(243,59,225,0.60) ;
+    font-size: 1.777em;
+    color: #fff;
+    padding: 10px 60px;  /* 1. 글씨 박스 여백줄때 너비값은 주고 높이값은 padding or line-height(글자높이에맞게) */
+    /* line-height: 50px; 2 글씨박스 여백  */
+    margin-right: 10px;
+    text-align: center;
+    letter-spacing: -0.02rem;
+    border-radius: 12px;
+}
+main .visual .txt .link a:hover {
+background: #F33BE1; color:#111;
+font-weight: 700;
+}
+main .visual .txt .link a:first-child{margin-right:10px;}
+main .visual video {
+    width: 100%; 
+    /* 화면크기 조정 시 비디오 중심축 맞추기 
+        필수 조건 ★ 비디오의 부모가 vh or px 높이설정 준비!! ->아주아주 중요
+    */
+    position:absolute; left:50%;
+    transform: translateX(-50%);
+/*  height: 100%;  *//* 화면 움직일 시 높이 꽉차게 */
+/* 방법3 절대 크기값 */
+/* width:1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백해결법 */
+/* 1. 반응형 웹 @media 특정해상도마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크탑 기준으ㅗㄹ 너비를 100% 보다
+    크게 설정하고 넘치게 하는방법 */
+/* 3. 상대크기가 아닌 절대크기값(px) 크기를 설정해서
+    화면 해상도에 영향을 받지않는 방법*/
+    /*  제일 좋은 방법은 px활용 */
+
+/* main 2. bnr */
+main .adver_bnr {background: url(../images/sunglass.jpg);}
+main .adver_bnr .txt {}
+main .adver_bnr .txt p {}
+main .adver_bnr .txt h2 {}
+main .adver_bnr .txt .link {}
+main .adver_bnr .txt .link a {}

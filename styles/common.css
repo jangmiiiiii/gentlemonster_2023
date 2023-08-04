@@ -16,7 +16,6 @@ header {
     width:calc(100% - 60px); /* full */
     height: 100px;
     margin: 0 auto;
-    background: lightblue;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
