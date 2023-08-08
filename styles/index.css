@@ -65,9 +65,45 @@ main .visual video {
     /*  제일 좋은 방법은 px활용 */
 
 /* main 2. bnr */
-main .adver_bnr {background: url(../images/sunglass.jpg);}
-main .adver_bnr .txt {}
-main .adver_bnr .txt p {}
-main .adver_bnr .txt h2 {}
-main .adver_bnr .txt .link {}
-main .adver_bnr .txt .link a {}
+main .adver_bnr {background: url(../images/sunglass.jpg) no-repeat;
+background-size: cover;
+height: 300px;
+padding-top: 70px;}
+main .adver_bnr .txt {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    text-align: s;
+}
+main .adver_bnr .txt p {font-size: 1.777rem;}
+main .adver_bnr .txt h2 {font-size: 3.157rem; font-weight: 700; margin: 20px 0 24px;}
+main .adver_bnr .txt .link {font-size: 1.333rem;}
+main .adver_bnr .txt .link a {border: 2px solid #222; 
+    width: 150px; height: 44px; margin-right:5px;
+    padding: 12px 0; display: inline-block; border-radius: 10px; text-align: center;
+}
+/* footer */
+footer {
+    width: clac(100 -60px) ; margin: 0 auto;
+    background: #ebebeb;
+}
+footer .f_menu { display: flex; padding: 50px 50px;}
+footer .f_menu dl { margin-right: 100px;}
+footer .f_menu  dl dt{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;}
+footer .f_menu  dl dd {line-height: 30px;}
+footer .f_menu  dl dd a {}
+
+footer .f_copy {
+    margin: 30px 30px;
+    display: flex;
+}
+footer .f_copy .logo {width: 213px; }
+footer .f_copy .logo img {width: 100%; }
+footer .f_copy address {
+    margin-left: 50px; line-height: 30px;
+}
+footer .f_copy address a { text-decoration: underline;
+}
