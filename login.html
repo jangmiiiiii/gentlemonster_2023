@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>LOGIN | GENTLEMONSTER</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <!-- header -->
+    <main>
+        <div class="all">
+            <h1>로그인</h1>
+            <div class="userType">
+                <h2><a href="#" class="active">가입 회원</a></h2>
+                <h2><a href="#">비회원 주문 조회</a></h2>
+            </div>
+            <div class="content">
+            <form action="#" method="post">
+                <fieldset>
+                        <input type="text" id="login_id" placeholder="아이디">
+                        <div class="login_pw">
+                            <input type="password" id="pw" placeholder="비밀번호">
+                            <a href="#"><img src="./images/visibility.png" alt=""></a>
+                        </div>
+                        <button type="submit">로그인</button>
+                        <div class="loginFrm">
+                            <div class="loginAuto">
+                                <label >
+                                    <input type="checkbox" name="login_all" value="auto" id="auto">
+                                    자동 로그인
+                                </label>
+                            </div>
+                            <div class="loginFind">
+                                <p><a href="#">아이디찾기 |  </a></p>
+                                <p><a href="#"> 비밀번호찾기</a></p>
+                            </div> 
+                        </div>
+                </fieldset>
+            </form>
+            <div class="kakao_apple">
+                <p id="kakao"><img src="./images/kakao.png" alt=""><em>카카오 로그인</em></p>
+                <p id="apple"><img src="./images/apple.png" alt=""><em>Apple 로그인</em></p>
+            </div>
+            <div class="sale_join">
+                <p>가입만 해도 즉시 1만원 할인</p>
+                <p class="join"><a href="#">회원가입</a></p>
+            </div>
+        </div>
+        </div>
+        
+    </main>
+    <script>
+        const userType = document.querySelectorAll('.userType')
+        const loginForm = document.querySelector('form')
+        console.log(userType, loginForm)
+
+
+        loginForm.forEach(function(t, i, a){
+            t.addEbentLi
+        })
+    </script>
+</body>
