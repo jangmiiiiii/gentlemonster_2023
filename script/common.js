@@ -44,7 +44,7 @@ const nav_adver = new Swiper('#nav_adver',{
 const fieldset = document.querySelector('fieldset')
 const search = document.querySelector('#search')
 search.addEventListener('focus',function(){
-    fieldset.style.background = '#ff83bd'
+    fieldset.style.background = '#F33BE1'
 })
 search.addEventListener('blur',function(){
     fieldset.style.background = '#222'

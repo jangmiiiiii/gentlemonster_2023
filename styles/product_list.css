@@ -1,0 +1,98 @@
+main {}
+main #category { background: lightcoral; width: 1380px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #category a { width: 170px; height: 170px; display: block; border-radius: 50%; text-align: center;}
+main #category a img {width: 100%; margin-bottom: 25px;}
+main #category a:hover img {filter:brightness(105%);}
+main #category a:hover span {color: #aaa;}
+main #category a span {}
+main #product_list {width: 1380px; margin: 0 auto; margin-top: 122px;}
+main #product_list .top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding-bottom: 50px;
+    border-bottom:2px solid #000 ;
+    width: 100%;
+}
+main #product_list .top h1 {
+    font-size: 2.369rem;
+    font-weight: 700;
+}
+main #product_list .top .list_type {
+}
+main #product_list .top .list_type a {
+    padding-left: 50px;
+}
+main #product_list .btm {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+main #product_list .btm p {}
+main #product_list .btm p em {font-weight: 600;}
+main #product_list .btm #product_align {font-weight: 500;}
+/* container item 공통영역 */
+main #product_list .container {background: lightgreen; width: 1380px;  margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #product_list .container .item {}
+main #product_list .container .item .box {background: lightcoral;}
+main #product_list .container .item .box .item_img {width: 263px; height:325px; display: block; margin-bottom: 10px;}
+main #product_list .container .item .box .item_img img {width: 100%; height: 100%;}
+main #product_list .container .item .box .like_img {position: relative;}
+main #product_list .container .item .box .like_img img {position: absolute; right: -250px; top: -310px;}
+main #product_list .container .item .txt {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom:50px ;
+}
+main #product_list .container .item .txt >* {margin-bottom: 10px;}
+main #product_list .container .item .txt h2 { color:blue}
+main #product_list .container .item .txt .name {font-weight: 500;}
+main #product_list .container .item .txt .price {}
+main #product_list .container .item .txt .color {}
+main #product_list .container .item .txt .color span {background: lavenderblush;
+    width:24px; height: 24px; 
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    text-indent: -9999px;
+    
+}
+/* item1 */
+main #product_list .container .item1 .txt .color span:first-child {background-color: black;}
+main #product_list .container .item1 .txt .color span:nth-child(2){background-color: gray;}
+main #product_list .container .item1 .txt .color span:nth-child(3){background-color: lightgray;}
+main #product_list .container .item1 .txt .color span:nth-child(4){background-color: lightblue;}
+main #product_list .container .item1 .txt .color span:nth-child(5){background-color: brown;}
+main #product_list .container .item1 .txt .color span:last-child{background-color: yellow;}
+/* item2 */
+main #product_list .container .item2 .txt .color span:first-child {background-color: black;}
+main #product_list .container .item2 .txt .color span:nth-child(2){background-color: gray;}
+main #product_list .container .item2 .txt .color span:nth-child(3){background-color: lightgray;}
+main #product_list .container .item2 .txt .color span:nth-child(4){background-color: lightpink;}
+main #product_list .container .item2 .txt .color span:nth-child(5){background-color: brown;}
+main #product_list .container .item2 .txt .color span:last-child{background-color: navy;}
+/* item3 */
+main #product_list .container .item3 .txt .color span:nth-child(1){background-color: lightgray;}
+main #product_list .container .item3 .txt .color span:nth-child(2){background-color: lightpink;}
+main #product_list .container .item3 .txt .color span:nth-child(3){background-color: lightblue;}
+/* item4 */
+
+main #product_list .container .item4 .txt .color .lightgray {}
+main #product_list .container .item4 .txt .color .lightblue {}
+main #product_list .container .item4 .txt .color .lightpink {}
+/* item5 */
+
+main #product_list .container .item5 .txt .color .black {}
+main #product_list .container .item5 .txt .color .gray {}
+main #product_list .container .item5 .txt .color .navy {}
+main #product_list .container .item5 .txt .color .blue {}

@@ -1,22 +1,24 @@
 main {width: 100%; margin: 0 auto; background: #ececec;
 display: flex;
 flex-flow:column nowrap ;}
-main .all {background: #fff; width: 750px; height: 1400px; margin: 0 auto;
+main {background: #fff; width: 750px; height: 1400px; margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center}
-main .all h1 {
+main h1 {
     font-size: 2.369rem ;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 70px;
+    margin-top: 200px;
+    letter-spacing: -0.07rem;
 }
-main .all .userType {
+main .userType {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
-main .all .userType h2 a {
+main .userType h2 a {
     font-size: 1.777rem;
     font-weight: 500;
     width: 325px;
@@ -30,24 +32,24 @@ main .all .userType h2 a {
     display: inline-block;
 }
 
-main .all .userType h2 .active {
+main .userType h2 .active {
     border-bottom: 4px solid #000;
     color: #000;}
 /* main .all .userType h2::after {
     border-bottom: 3px solid #fff;
 } */
-main .all form {}
-main .all form fieldset {
+main .content .tab1 form {}
+main .content .tab1 form fieldset {
     display: flex;
     flex-flow: column nowrap;
 }
-main .all form fieldset #login_id {
+main .content .tab1 form fieldset #login_id {
     width: 500px; height: 60px;
     border-radius: 10px; border: 2px solid #aaa;
     margin-bottom: 20px;
     padding: 30px 30px;
 }
-main .all form fieldset .login_pw { 
+main .content .tab1 form fieldset .login_pw { 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -56,17 +58,17 @@ main .all form fieldset .login_pw {
     margin-bottom: 40px;
     padding: 15px 30px;
 }
-main .all form fieldset .login_pw #pw {}
-main .all form fieldset button {background: #000;
+main .content .tab1 form fieldset .login_pw #pw {}
+main .content .tab1 form fieldset button {background: #000;
     width: 500px; height: 60px;
     font-size: 1.333rem;
     border-radius: 10px;
     color: #fff;
     margin-bottom: 20px;
 }
-main .all form fieldset #login_button {}
-main .all form fieldset #login_button img {}
-main .all form fieldset .loginFrm {
+main .content .tab1 form fieldset #login_button {}
+main .content .tab1 form fieldset #login_button img {}
+main .content .tab1 form fieldset .loginFrm {
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -74,27 +76,27 @@ main .all form fieldset .loginFrm {
     margin-bottom: 40px;
     
 }
-main .all form fieldset .loginFrm .loginAuto {}
-main .all form fieldset .loginFrm .loginAuto label {font-size: 1.333rem;}
-main .all form fieldset .loginFrm .loginAuto label #auto {}
-main .all form fieldset .loginFrm .loginFind {
+main .content .tab1 form fieldset .loginFrm .loginAuto {}
+main .content .tab1 form fieldset .loginFrm .loginAuto label {font-size: 1.333rem;}
+main .content .tab1 form fieldset .loginFrm .loginAuto label #auto {}
+main .content .tab1 form fieldset .loginFrm .loginFind {
     display: flex;
 }
-main .all form fieldset .loginFrm .loginFind p {
+main .content .tab1 form fieldset .loginFrm .loginFind p {
     
 }
-main .all form fieldset .loginFrm .loginFind p a {
+main .content .tab1 form fieldset .loginFrm .loginFind p a {
     font-size: 1.333rem;
     color: #aaa;
     letter-spacing: -0.02rem;
 }
-main .all .kakao_apple {
+main .content .tab1 .kakao_apple {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-main .all .kakao_apple #kakao {background: #FEE500;
+main .content .tab1 .kakao_apple #kakao {background: #FEE500;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -104,9 +106,9 @@ main .all .kakao_apple #kakao {background: #FEE500;
     border-radius: 10px ;
     margin-bottom: 20px;
 }
-main .all .kakao_apple #kakao img {width:30px; margin-right: 20px;}
-main .all .kakao_apple #kakao em {font-size: 1.333rem; font-weight: 500;}
-main .all .kakao_apple #apple {
+main .content .tab1 .kakao_apple #kakao img {width:30px; margin-right: 20px;}
+main .content .tab1 .kakao_apple #kakao em {font-size: 1.333rem; font-weight: 500;}
+main .content .tab1 .kakao_apple #apple {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -119,15 +121,17 @@ main .all .kakao_apple #apple {
     border: 2px solid #aaa;
     margin-bottom: 70px;
 }
-main .all .kakao_apple #apple img {width: 30px; margin-right: 20px;}
-main .all .kakao_apple #apple em {font-size: 1.333rem; font-weight: 500; }
-main .all .sale_join {
+main .content .tab1 .kakao_apple #apple img {width: 30px; margin-right: 20px;}
+main .content .tab1 .kakao_apple #apple em {font-size: 1.333rem; font-weight: 500; }
+main .content .tab1 .sale_join {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-main .all .sale_join p:first-child {color: #0078FF; font-weight: 600; margin-right: 20px;}
-main .all .sale_join .join {}
-main .all .sale_join .join a { color: #0078FF; font-weight: 600; border-radius: 5px; border: 2px solid  #0078FF;
+main .content .tab1 .sale_join p:first-child {color: #0078FF; font-weight: 600; margin-right: 20px;}
+main .content .tab1 .sale_join .join {}
+main .content .tab1 .sale_join .join a { color: #0078FF; font-weight: 600; border-radius: 5px; border: 2px solid  #0078FF;
     padding: 5px 10px;
 }
+main content .tab2 {background: #0078FF; width: 500px; height: 600px;}
+main content .tab2 p {}

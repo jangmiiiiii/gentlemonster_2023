@@ -128,3 +128,28 @@ header #open_nav nav a::after {
     transform: translateX(-50%) scaleX(0);
     transition: all 0.5s;
 }
+/* footer */
+footer {
+    width: clac(100 -60px) ; margin: 0 auto;
+    background: #ebebeb;
+}
+footer .f_menu { display: flex; padding: 50px 50px;}
+footer .f_menu dl { margin-right: 100px;}
+footer .f_menu  dl dt{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;}
+footer .f_menu  dl dd {line-height: 30px;}
+footer .f_menu  dl dd a {}
+
+footer .f_copy {
+    margin: 30px 30px;
+    display: flex;
+}
+footer .f_copy .logo {width: 213px; }
+footer .f_copy .logo img {width: 100%; }
+footer .f_copy address {
+    margin-left: 50px; line-height: 30px;
+}
+footer .f_copy address a { text-decoration: underline;
+}
