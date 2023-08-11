@@ -1,5 +1,50 @@
 main {}
-main #category { background: lightcoral; width: 1380px; margin: 0 auto;
+/* 1. swiper-slide */
+main #product_slide {}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide 1~6 */
+    width: 700px; height: 740px;
+    position: relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position: absolute; left: 50px; bottom: 20px;
+    /* 초기 숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능추가 */
+    opacity: 0; transition: all 1s;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt {
+    font-size: 2.369rem; line-height: 60px; letter-spacing: -0.02rem;
+    color: #fff;
+    }
+main #product_slide .swiper-wrapper .swiper-slide .txt dt em {
+    font-size: 2.369rem; font-weight: 700; letter-spacing: -0.02rem; 
+    color: #F33BE1;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dd {
+    font-size: 1.777rem; line-height: 90px;
+    
+    color: #fff;
+}
+main #product_slide .swiper-wrapper::after { /*배경화면 그라디언트 색 추가 */
+    content:''; /* 넣을게 없으면 빈 따옴표 넣기 */
+    display: block; width: 100%;/* block을 쓰면 기본이 100%값이다 */ height: 800px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.952) 100%);
+    position: absolute; left: 0; top: 300px;}
+main #product_slide .swiper-wrapper .slide1 {background-image: url(../images/model/model_01.jpg); z-index: 100;}
+main #product_slide .swiper-wrapper .slide2 {background-image: url(../images/model/model_02.jpg);}
+main #product_slide .swiper-wrapper .slide3 {background-image: url(../images/model/model_03.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background-image: url(../images/model/model_04.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background-image: url(../images/model/model_05.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background-image: url(../images/model/model_06.jpg);}
+/* swiper-scrollbar design */
+main #product_slide .swiper-scrollbar {/* 스크롤 배경(크기, 위치 o) */
+    /* position: absolute; 기본설정 */
+    left: 50%; bottom: 20px; transform:translateX(-50%) ;
+    background: #fff; width: 500px;
+} 
+main #product_slide .swiper-scrollbar-drag {background-color: #F33BE1;}
+/* 2. 카테고리 */
+main #category { background: lightcoral; width: 1350px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -9,7 +54,7 @@ main #category a img {width: 100%; margin-bottom: 25px;}
 main #category a:hover img {filter:brightness(105%);}
 main #category a:hover span {color: #aaa;}
 main #category a span {}
-main #product_list {width: 1380px; margin: 0 auto; margin-top: 122px;}
+main #product_list {width: 1350px; margin: 0 auto; margin-top: 122px;}
 main #product_list .top {
     display: flex;
     flex-flow: row nowrap;
@@ -44,11 +89,11 @@ main #product_list .container {background: lightgreen; width: 1380px;  margin: 0
     justify-content: space-between;
 }
 main #product_list .container .item {}
-main #product_list .container .item .box {background: lightcoral;}
+main #product_list .container .item .box {background: lightcoral; position: relative;}
 main #product_list .container .item .box .item_img {width: 263px; height:325px; display: block; margin-bottom: 10px;}
 main #product_list .container .item .box .item_img img {width: 100%; height: 100%;}
-main #product_list .container .item .box .like_img {position: relative;}
-main #product_list .container .item .box .like_img img {position: absolute; right: -250px; top: -310px;}
+main #product_list .container .item .box .like_img {position: absolute; right:10px; top:10px;}
+main #product_list .container .item .box .like_img img:hover {background-image: url(../images/glasses_img/favorite_after.png );}
 main #product_list .container .item .txt {
     display: flex;
     flex-flow: column nowrap;
@@ -58,7 +103,7 @@ main #product_list .container .item .txt >* {margin-bottom: 10px;}
 main #product_list .container .item .txt h2 { color:blue}
 main #product_list .container .item .txt .name {font-weight: 500;}
 main #product_list .container .item .txt .price {}
-main #product_list .container .item .txt .color {}
+main #product_list .container .item .txt .color {position: relative;}
 main #product_list .container .item .txt .color span {background: lavenderblush;
     width:24px; height: 24px; 
     border-radius: 50%;
@@ -72,8 +117,8 @@ main #product_list .container .item1 .txt .color span:first-child {background-co
 main #product_list .container .item1 .txt .color span:nth-child(2){background-color: gray;}
 main #product_list .container .item1 .txt .color span:nth-child(3){background-color: lightgray;}
 main #product_list .container .item1 .txt .color span:nth-child(4){background-color: lightblue;}
-main #product_list .container .item1 .txt .color span:nth-child(5){background-color: brown;}
-main #product_list .container .item1 .txt .color span:last-child{background-color: yellow;}
+main #product_list .container .item1 .txt .color span:nth-child(5){background-color: #fff; border: 1px solid #aaa; position: absolute; bottom: 0;}
+main #product_list .container .item1 .txt .color span:last-child{background-color: rgb(255, 199, 147);}
 /* item2 */
 main #product_list .container .item2 .txt .color span:first-child {background-color: black;}
 main #product_list .container .item2 .txt .color span:nth-child(2){background-color: gray;}
@@ -86,13 +131,10 @@ main #product_list .container .item3 .txt .color span:nth-child(1){background-co
 main #product_list .container .item3 .txt .color span:nth-child(2){background-color: lightpink;}
 main #product_list .container .item3 .txt .color span:nth-child(3){background-color: lightblue;}
 /* item4 */
-
-main #product_list .container .item4 .txt .color .lightgray {}
-main #product_list .container .item4 .txt .color .lightblue {}
-main #product_list .container .item4 .txt .color .lightpink {}
+main #product_list .container .item4 .txt .color span:nth-child(1){background-color: lightgray;}
+main #product_list .container .item4 .txt .color span:nth-child(2){background-color: lightpink;}
 /* item5 */
-
-main #product_list .container .item5 .txt .color .black {}
-main #product_list .container .item5 .txt .color .gray {}
-main #product_list .container .item5 .txt .color .navy {}
-main #product_list .container .item5 .txt .color .blue {}
+main #product_list .container .item5 .txt .color span:first-child {background-color: black;}
+main #product_list .container .item5 .txt .color span:nth-child(2){background-color: navy;}
+main #product_list .container .item5 .txt .color span:nth-child(3){background-color: gray;}
+main #product_list .container .item5 .txt .color span:nth-child(4){background-color: lightgray;}
