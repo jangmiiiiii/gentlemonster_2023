@@ -133,12 +133,12 @@ main .content .tab1 .sale_join .join {}
 main .content .tab1 .sale_join .join a { color: #0078FF; font-weight: 600; border-radius: 5px; border: 2px solid  #0078FF;
     padding: 5px 10px;
 }
-main content .tab2 {background: #0078FF; width: 500px; height: 600px;}
-main content .tab2 form {background: lightblue;}
-main content .tab2 form fieldset {}
-main content .tab2 form fieldset ul {}
-main content .tab2 form fieldset ul li {}
-main content .tab2 form fieldset ul li p {}
-main content .tab2 form fieldset ul li #user_name {}
-main content .tab2 form fieldset ul li #user_num {}
-main content .tab2 form fieldset button {}
+main .content .tab2 {background: #deedff; width: 1440px; height: 600px; margin: 0 auto;}
+main .content .tab2 #tab2_title {}
+main .content .tab2 #tab2_title fieldset {}
+main .content .tab2 #tab2_title fieldset ul {background: lightblue;}
+main .content .tab2 #tab2_title fieldset ul li {}
+main .content .tab2 #tab2_title fieldset ul li p {}
+main .content .tab2 #tab2_title fieldset ul li #user_name {}
+main .content .tab2 #tab2_title fieldset ul li #user_num {}
+main .content .tab2 #tab2_title fieldset button {}
