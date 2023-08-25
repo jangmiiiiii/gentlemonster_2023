@@ -32,7 +32,7 @@ nav_close.addEventListener('click', function(){
 })
 
 // swiper-slide open-nav 광고영역
-const nav_adver = new Swiper('#nav_adver',{
+/* const nav_adver = new Swiper('#nav_adver',{
     direction:'horizontal',
     autoplay:{delay:1000}, // 1초당 1000 
     loop:true,
@@ -48,6 +48,6 @@ search.addEventListener('focus',function(){
 })
 search.addEventListener('blur',function(){
     fieldset.style.background = '#222'
-})
+}) */
 
 

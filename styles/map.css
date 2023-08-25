@@ -1,0 +1,20 @@
+#map {
+    background: aqua;
+    width: 700px; height: 500px; margin: 50px auto;
+}
+main h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+main p > * {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+main p em { font-size: 1.3rem; font-weight: 600;}
+main p span:first-child {}
+main p span:last-child {}
