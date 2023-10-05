@@ -1,3 +1,4 @@
+/* 로그인 유저타입 */
 main {width: 100%; margin: 0 auto; background: #ececec;
 display: flex;
 flex-flow:column nowrap ;}
@@ -38,30 +39,45 @@ main .userType h2 .active {
 /* main .all .userType h2::after {
     border-bottom: 3px solid #fff;
 } */
+main .content .tab1 form fieldset > ul > li {
+    padding-bottom: 10px;
+}
+main .content .tab1 form fieldset > ul > li > p {
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-left: 2px;
+
+}
+
+/* 회원로그인 */
 main .content .tab1 form {}
 main .content .tab1 form fieldset {
     display: flex;
     flex-flow: column nowrap;
 }
 main .content .tab1 form fieldset #login_id {
-    width: 500px; height: 60px;
-    border-radius: 10px; border: 2px solid #aaa;
+    width: 500px; height: 55px;
+    border-radius: 5px; border: 2px solid #aaa;
     margin-bottom: 20px;
-    padding: 30px 30px;
+    padding: 15px 15px;
 }
 main .content .tab1 form fieldset .login_pw { 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 500px; height: 60px;
-    border-radius: 10px; border: 2px solid #aaa;
+    width: 500px; height: 55px;
+    border-radius: 5px; border: 2px solid #aaa;
     margin-bottom: 40px;
-    padding: 15px 30px;
+    padding: 15px 15px;
 }
 main .content .tab1 form fieldset .login_pw #pw {}
+main .content .tab1 form fieldset button:hover {
+    background: #F33BE1;
+    color: #ffffff;
+}
 main .content .tab1 form fieldset button {background: #000;
     width: 500px; height: 60px;
-    font-size: 1.333rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     color: #fff;
     margin-bottom: 20px;
@@ -77,68 +93,114 @@ main .content .tab1 form fieldset .loginFrm {
     
 }
 main .content .tab1 form fieldset .loginFrm .loginAuto {}
-main .content .tab1 form fieldset .loginFrm .loginAuto label {font-size: 1.333rem;}
+main .content .tab1 form fieldset .loginFrm .loginAuto label {font-size: 1.2rem;}
 main .content .tab1 form fieldset .loginFrm .loginAuto label #auto {}
 main .content .tab1 form fieldset .loginFrm .loginFind {
     display: flex;
+    text-align: center;
+}
+main .content .tab1 form fieldset .loginFrm .loginFind p a:hover {
+    color: #000;
 }
 main .content .tab1 form fieldset .loginFrm .loginFind p {
-    
+    padding-right: 10px;
+    color: #aaa;
 }
 main .content .tab1 form fieldset .loginFrm .loginFind p a {
-    font-size: 1.333rem;
+    font-size: 1.2rem;
     color: #aaa;
     letter-spacing: -0.02rem;
+
 }
 main .content .tab1 .kakao_apple {
+    width: 100%; height: 100%; margin: 0 auto;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
+    padding:50px 0;
+}
+main .content .tab1 .kakao_apple #kakao:hover {
+    transform: scale(1.05);
 }
 main .content .tab1 .kakao_apple #kakao {background: #FEE500;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items:center ;
-    width: 500px; height: 60px;
+    width: 250px; height: 60px;
     text-align: center;
     border-radius: 10px ;
-    margin-bottom: 20px;
 }
-main .content .tab1 .kakao_apple #kakao img {width:30px; margin-right: 20px;}
-main .content .tab1 .kakao_apple #kakao em {font-size: 1.333rem; font-weight: 500;}
+main .content .tab1 .kakao_apple #kakao img {width:25px; margin-right: 20px;}
+main .content .tab1 .kakao_apple #kakao em {font-size: 1.2rem; font-weight: 500;}
+main .content .tab1 .kakao_apple #apple:hover {
+    transform: scale(1.05);
+}
 main .content .tab1 .kakao_apple #apple {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items:center ;
-    width: 500px; height: 60px;
-    text-align: center;
-    width: 500px; height: 60px;
+    width: 245px; height: 60px;
     text-align: center;
     border-radius: 10px ;
-    border: 2px solid #aaa;
-    margin-bottom: 70px;
+    border: 2px solid #e4e4e4;
+
 }
-main .content .tab1 .kakao_apple #apple img {width: 30px; margin-right: 20px;}
-main .content .tab1 .kakao_apple #apple em {font-size: 1.333rem; font-weight: 500; }
+main .content .tab1 .kakao_apple #apple img {width: 25px; margin-right: 20px;}
+main .content .tab1 .kakao_apple #apple em {font-size: 1.2rem; font-weight: 500; }
 main .content .tab1 .sale_join {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
 }
-main .content .tab1 .sale_join p:first-child {color: #0078FF; font-weight: 600; margin-right: 20px;}
+main .content .tab1 .sale_join p:first-child {
+    font-size: 1.2rem;
+    color: #0078FF; font-weight: 600; margin-right: 20px;}
 main .content .tab1 .sale_join .join {}
+main .content .tab1 .sale_join .join a:hover {
+    font-weight: 700;
+}
 main .content .tab1 .sale_join .join a { color: #0078FF; font-weight: 600; border-radius: 5px; border: 2px solid  #0078FF;
     padding: 5px 10px;
 }
-main .content .tab2 {background: #0078FF; width: 100%;}
-main .content .tab2 form {background: lightblue;}
-main .content .tab2 form fieldset {}
+
+/* 비회원 로그인 */
+main .content .tab2 { width: 100%;}
+main .content .tab2 form {}
+main .content .tab2 form fieldset {    
+    display: flex;
+    flex-flow: column nowrap;
+}
 main .content .tab2 form fieldset ul {}
-main .content .tab2 form fieldset ul li {}
-main .content .tab2 form fieldset ul li p {}
-main .content .tab2 form fieldset ul li #user_name {}
-main .content .tab2 form fieldset ul li #user_num {}
-main .content .tab2 form fieldset button {}
+main .content .tab2 form fieldset ul li {
+    padding-bottom: 10px;
+}
+main .content .tab2 form fieldset ul li p {    
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
+main .content .tab2 form fieldset ul li #user_name {
+    width: 500px; height: 55px;
+    border-radius: 5px; border: 2px solid #aaa;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+
+}
+main .content .tab2 form fieldset ul li #user_num {
+    width: 500px; height: 55px;
+    border-radius: 5px; border: 2px solid #aaa;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+}
+main .content .tab2 form fieldset button {background: #000;
+    width: 500px; height: 60px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

@@ -27,29 +27,38 @@
             <div class="tab1">
                 <form action="#" method="post">
                     <fieldset>
-                            <input type="text" id="login_id" placeholder="아이디">
-                            <div class="login_pw">
-                                <input type="password" id="pw" placeholder="비밀번호">
-                                <a href="#"><img src="./images/visibility.png" alt=""></a>
-                            </div>
+                        <ul>
+                            <li>
+                                <p>로그인</p>
+                                <input type="text" id="login_id" placeholder="아이디를 입력하세요">
+                            </li>
+                            <li>
+                                <p>비밀번호</p>
+                                <div class="login_pw">
+                                    <input type="password" id="pw" placeholder="비밀번호를 입력하세요">
+                                    <a href="#"><img src="./images/visibility.png" alt=""></a>
+                                </div>
+                            </li>
+                        </ul>
                             <button type="submit">로그인</button>
                             <div class="loginFrm">
                                 <div class="loginAuto">
-                                    <label >
+                                    <label>
                                         <input type="checkbox" name="login_all" value="auto" id="auto">
                                         자동 로그인
                                     </label>
                                 </div>
                                 <div class="loginFind">
-                                    <p><a href="#">아이디찾기 |  </a></p>
+                                    <p><a href="#">아이디찾기 </a></p>
+                                    <p>|</p>
                                     <p><a href="#"> 비밀번호찾기</a></p>
                                 </div> 
                             </div>
                     </fieldset>
                 </form>
                 <div class="kakao_apple">
-                    <p id="kakao"><img src="./images/kakao.png" alt=""><em>카카오 로그인</em></p>
-                    <p id="apple"><img src="./images/apple.png" alt=""><em>Apple 로그인</em></p>
+                    <a href="#" id="kakao"><img src="./images/kakao.png" alt=""><em>카카오 로그인</em></a>
+                    <a href="#" id="apple"><img src="./images/apple.png" alt=""><em>Apple 로그인</em></a>
                 </div>
                 <div class="sale_join">
                     <p>가입만 해도 즉시 1만원 할인</p>
@@ -75,7 +84,41 @@
         </div>
     </main>
     <?php include('./footer.php') ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./script/login.js"></script>
-    <!-- header, footer 웹페이지 공통영역 적용 JS -->
     <script src="./script/common.js"></script>
+    <!-- header, footer 웹페이지 공통영역 적용 JS -->
+    <script>
+        const userType = document.querySelectorAll('main .userType > h2 > a')
+        const tab = document.querySelectorAll('main .content > div')
+        console.log(userType, tab)
+
+        tab[1].style.display = 'none'; //1 .비회원 주문확인 초기 숨기기
+        //2. 비회원 주문확인 탭제목 클릭시 내용 보이기 (회원로그인 숨기기)'
+        userType[1].addEventListener('click',function(){
+            tab[0].style.display = 'none'
+            tab[1].style.display = 'block'
+        })
+        //3. 회원 로그인 탭제목 클릭시 내용 보이기 (비회원 주문조회 숨기기)'
+        userType[0].addEventListener('click',function(){
+            tab[1].style.display = 'none'
+            tab[0].style.display = 'block'
+        })
+        userType.forEach(function(t,i,a){
+            t.addEventListener('click',function(e){
+                e.preventDefault()
+                for(let i of tab){i.style.display='none'}
+                tab[i].style.display = 'block'
+                for(let t of userType){t.classList.remove('active')}
+                t.classList.add('active')
+            })
+        })
+/*         tab[1].style.display = 'none'
+        for(let i of userType){
+            i.addEventListener('click',function(){
+                for(let j of userType){j.classList.remove('active')}
+                i.classList.add('active')
+            })
+        } */
+    </script>
 </body>
